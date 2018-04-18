@@ -1,0 +1,388 @@
+/* fonts */
+@font-face {
+  font-family: solidoHairline;
+  src: url(./files/Solido\ Compressed\ Hairline.otf);
+}
+
+@font-face {
+  font-family: solidoBold;
+  src: url(./files/Solido\ Compressed\ Bold.otf);
+}
+
+@font-face {
+  font-family: solidoBook;
+  src: url(./files/Solido\ Compressed\ Book.otf);
+}
+
+@font-face {
+  font-family: polenoAltBlack;
+  src: url(./files/polenoaltblack.otf);
+}
+
+@font-face {
+  font-family: polenoAltBold;
+  src: url(./files/polenoaltbold.otf);
+}
+
+@font-face {
+  font-family: polenoAltMedium;
+  src: url(./files/polenoaltmedium.otf);
+}
+
+input {
+  font-family: solidoHairline;
+  font-size: 20px;
+  padding: 9px;
+  text-align: center;
+  margin: 2px;
+  width: 200px;
+}
+
+/* general rules */
+
+body {
+  margin: 0;
+}
+
+a{
+outline: 0;
+}
+
+input.medium {
+  width: 130px;
+}
+
+input.small {
+  width: 40px;
+}
+
+input.error {
+  background-color: #ebc7c9;
+  border: 1px solid red;
+}
+
+button.btn {
+  font-family: solidoHairline;
+  font-size: 20px;
+  padding: 11px;
+  background-color: #c7151d;
+  color: white;
+  margin: 2px;
+  width: 225px;
+  border: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #e9e1dc;
+}
+
+h2 {
+  color: #c7151d;
+  font-family: solidoBook;
+}
+
+a {
+  color: #c7151d;
+}
+
+h2.main {
+  font-size: 36px;
+  font-family: polenoAltBold;  
+}
+
+.hidden {
+  display: none;
+}
+
+/* page sections */
+
+.circle {
+  
+  margin: 5% auto;
+  background-color: #4e3f0c;
+  border-radius: 250px;
+  width:250px; 
+  height:250px;
+}
+
+.circle h2 {
+  font-size: 50px;
+  margin: auto;
+  font-family: polenoAltMedium;
+  color: #ffffff;
+  position: relative;
+  top: 10%;
+  padding: 3px;
+}
+
+.circle p {
+  font-family: SolidoHairline;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width:220px;
+  padding: 8px;
+}
+
+.redBanner {
+  font-family: solidoBook;
+  color: #ffffff;
+  background-color:#c7151d;
+  width:30%;
+  min-width: 200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 6px;
+}
+
+.steps {
+  width:75%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dashed #fff;
+  padding-bottom:20px;
+}
+
+.step, .stepPic {
+  width: 105px;
+  margin:0;
+  
+}
+
+.stepPic{
+    background: url('files/stopa.png') no-repeat center center;
+    height:90px;
+    position:relative;
+    top:10px;
+}
+
+.stepPic:nth-of-type(4){
+    transform: scaleY(-1) rotate(5deg);
+    top:-20px;
+}
+
+.stepNum {
+  background-color: #ffffff;
+  border-radius: 75px;
+  width:75px; 
+  height:75px;
+  margin:0 auto;
+}
+
+.stepNum.selected {
+  background-color: #c7151d;
+  color: #ffffff;
+}
+
+.stepNum p {
+  position: relative;
+  top: 30%;
+  font-family: polenoAltBlack;
+  margin:0;
+  font-size: 28px;
+}
+
+.stepFooter {
+  width:100%; 
+}
+
+.stepFooter p {
+  font-family: solidoHairline;
+}
+
+.cardContainer {
+  justify-content: center;
+  margin: auto;
+  width:75%;
+  padding-bottom:20px;
+  border-bottom: 1px dashed #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  height:120px; 
+  width:90px;
+  border: 1px solid black;
+  margin: 0 2vw 5px;
+  padding-top: 10px;
+}
+
+.card p:not(.tag) {
+  font-family: solidoHairline;
+  margin: 0;
+}
+
+.card.selected {
+  background-color: #c7151d;
+  color: white;
+}
+
+.card p.price {
+  font-family: solidoBold;
+  color: #c7151d;
+}
+
+.card.selected p.price {
+  color: white;
+}
+
+.card p:first-child:not(.tag) {
+  font-family: solidoBold;
+}
+
+.tag {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -4px;
+    left: -10px;
+    transform: rotate(-30deg);
+    color: #c7151d;
+}
+
+.formContainer {
+  margin: 0 auto 30px auto;
+  justify-content: center;
+  width:80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  border-right: 1px dashed #fff;
+  padding-right:8px;
+}
+
+.right{
+    margin-left:8px;
+}
+
+.formContainer > div {
+  width: 40%;
+}
+
+.addressContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.formContainer input, .formContainer button{
+    height:1em;
+    padding-top:3px;
+    padding-bottom: 3px;
+    margin: 10px 5px;  
+}
+
+.addressContainer input:first-child{
+  width:61%;
+
+}
+.addressContainer input:last-child{
+  width:18%;
+  
+}
+
+.addressContainer.oneinput input{
+  width:90%;
+
+}
+
+.addressContainer.oneinput button{
+  height:1.6em;
+  width:96%;
+}
+
+.whiteStripe {
+    padding-top: 1px;
+    padding-bottom: 15px;
+    background-color: white;
+    /* margin-left: -5%;
+    margin-right: -5%; */
+}
+
+.whiteStripe div {
+  font-family: solidoBook; 
+  padding-bottom: 5px;
+}
+
+div#code {
+  font-family: solidoBold;
+  font-size: 30px;
+  color: #c7151d;
+  border: 2px solid #c7151d;
+  width: 300px;
+  margin: 0 auto 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.boldText {
+  font-family: solidoBold;
+  font-size: 20px;
+}
+
+
+
+/* media queries */
+@media (max-width: 450px) {
+.left, .right {
+    min-width: 300px;
+}
+.left {
+    border-bottom: 1px dashed #fff;
+    border-right: 0px !important;
+    padding-right: 0 !important;
+}
+.right {
+    margin-left: 0 !important;
+}
+.addressContainer {
+    width: 90% !important;
+}
+}
+
+@media (max-width: 980px) {
+  .stepPic {
+      background: 0 !important;
+      width: 0 !important;
+  }
+}
+
+@media (max-width: 1020px) {
+input {
+    width: 90% !important;
+}
+}
+
+@media (max-width: 1289px) {
+.moveUp {
+    position:relative;
+    top: -100px;
+}
+}
+
+@media (max-width: 800px) {
+.moveUp {
+    position:relative;
+    top: -80px;
+}
+}
+
+@media (min-width: 1290px) {
+.moveUp {
+  position:relative;
+  top: -150px;
+}
+}

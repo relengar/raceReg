@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Spartan race</title>
+  </head>
+    <body>
+        <div>
+            <div>
+                <div class="circle">
+                    <h2>Pozor</h2>
+                    <p>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam. Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
+                </div>
+                <div class="redBanner moveUp">Na konkretny beh je mozne sa prihlasit najneskor tyzden pred  zciatkom</div>
+            </div>
+            <div>
+                <h2 class="main">Ako na to?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="stepNum selected"><p>01</p></div>
+                        <div class="stepFooter"><p>vyberte si beh</p></div>
+                    </div>
+                    <div class="stepPic"></div>
+                    <div class="step">
+                        <div class="stepNum"><p>02</p></div>
+                        <div class="stepFooter"><p>vyplnte osobne udaje</p></div>
+                    </div>
+                    <div class="stepPic"></div>
+                    <div class="step">
+                        <div class="stepNum"><p>03</p></div>
+                        <div class="stepFooter"><p>zaregistrujte sa</p></div>
+                    </div>
+                    <div class="stepPic"></div>
+                    <div class="step">
+                        <div class="stepNum"><p>04</p></div>
+                        <div class="stepFooter"><p>prineste casopis</p></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>01 Vyber Behu</h2>
+                <div class="cardContainer">
+                    <div class="card">
+                        <p class="tag">pre zdravie</p>
+                        <p>19.3 <br />Donovaly</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                    <div class="card">
+                        <p>4.6 <br />Nitra</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                    <div class="card">
+                        <p>9.7 <br />Kosice</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                    <div class="card">
+                        <p>19.3 <br />Donovaly</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                    <div class="card">
+                        <p>4.6 <br />Nitra</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                    <div class="card">
+                        <p>9.7 <br />Kosice</p>
+                        <p>Spartan beast</p>
+                        <p class="price">55€</p>
+                        <p>Vsetky vlny</p>
+                    </div>
+                </div>
+            </div>
+            <div id="form" class="hidden">
+                <h2>02 Udaje</h2>
+                <form action="">
+                    <div class="formContainer">
+                        <div class="left">
+                            <div class="addressContainer oneinput">
+                                <input type="text" placeholder="meno a priezvisko" name="name" id="name">
+                            </div>
+                            <div class="addressContainer">
+                                <input class="medium" type="text" placeholder="ulica" name="street" id="street">
+                                <input class="small" type="text" placeholder="cislo domu" name="homeNum" id="homeNum">
+                            </div>
+                            <div class="addressContainer">
+                                <input class="medium" type="text" placeholder="mesto"mesto name="city" id="city">
+                                <input class="small" type="text" placeholder="PSC" name="postcode" id="postcode">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="addressContainer oneinput"><input type="tel" placeholder="telefonne cislo" name="phone" id="phone"></div>
+                            <div class="addressContainer oneinput"><input type="email" placeholder="e-mail" name="email" id="email"></div>
+                            <div class="addressContainer oneinput"><button class="btn">Odoslat</button></div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="whiteStripe hidden">
+                <h2>03 Registracia</h2>
+                <div id="code">No code generated</div>
+                <div style="font-family: solidoBook;">Na tomto <a href="javascript:register()">Linku</a> sa mozte zaregistrovat a uplatnit si zlavu</div>
+                <div class="redBanner">* zlava 25% ceny startovneho</div>
+            </div>
+            <div id="footer" class="hidden">
+                <h2>04 Casopis</h2>
+                <p class="boldText">Nezabudnite si priniest casopis.</p>
+            </div>
+        </div>
+    </body>
+</html>
